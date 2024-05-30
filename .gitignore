@@ -1,0 +1,10 @@
+.exercism
+.gradle
+bin
+gradle
+build.gradle
+gradlew
+gradlew.bat
+*.md
+test
+build
