@@ -72,4 +72,18 @@ public class Lesson_3 {
 
     System.out.println(accelGravity);
   }
+
+  public static void math_methods (String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      double p;
+      double q;
+      double r;
+
+      p = scnr.nextDouble();
+      q = scnr.nextDouble();
+
+      r = Math.sqrt(Math.abs(p) + Math.abs(q));
+
+      System.out.printf("r = %.2f\n", r); // Outputs r with 2 decimal places
+   }
 }
