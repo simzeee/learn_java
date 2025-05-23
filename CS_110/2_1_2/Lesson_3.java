@@ -44,4 +44,18 @@ public class Lesson_3 {
     totalHeartbeats = userAgeMinutes * avgBeatsPerMinute;
     System.out.println("Your heart has beat " + totalHeartbeats + " times.");
   }
+
+  public static void sound_Intensity(String[] args) {
+    Scanner scnr = new Scanner(System.in);
+    double soundPower;
+    double distanceTraveled;
+
+    soundPower = scnr.nextDouble();
+    distanceTraveled = scnr.nextDouble();
+
+    double soundIntensity = soundPower / (4.0 * Math.PI * (distanceTraveled * distanceTraveled));
+
+    System.out.printf("Sound wave intensity is %.3f\n", soundIntensity);
+
+  }
 }
