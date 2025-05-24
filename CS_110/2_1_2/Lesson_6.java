@@ -163,4 +163,24 @@ public class Lesson_6 {
         }
         System.out.println();
     }
+
+    public static void reverseInputArray(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int[] userList = new int[20];   // List of numElement integers specified by the user
+        int numElements;                // Number of integers in user's list
+        // Add more variables as needed
+
+        int num;
+
+        numElements = scnr.nextInt();
+        int[] inputList = new int[numElements];   // Input begins with number of integers that follow
+        for (int i = 0; i < numElements; ++i) {
+            num = scnr.nextInt();
+            inputList[i] = num;
+        }
+        for (int i = inputList.length - 1; i >= 0; --i) {
+            System.out.print(inputList[i] + ",");
+        }
+        System.out.println("");
+    }
 }
