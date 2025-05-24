@@ -1,4 +1,5 @@
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Lesson_3 {
@@ -152,5 +153,30 @@ public class Lesson_3 {
         System.out.println(" says eating " + wordFood);
         System.out.println("will make me more " + wordAdjective + ",");
         System.out.println("so now I eat it every " + wordTimePeriod + ".");
+    }
+
+    public static void main(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        Random randGen = new Random();
+        int seedVal;
+        int lowerBound;
+        int upperBound;
+        int pick1;
+        int pick2;
+        int pick3;
+
+        seedVal = scnr.nextInt();
+        lowerBound = scnr.nextInt();
+        upperBound = scnr.nextInt();
+
+        randGen.setSeed(seedVal);
+
+        pick1 = randGen.nextInt(upperBound - lowerBound + 1) + lowerBound;
+        pick2 = randGen.nextInt(upperBound - lowerBound + 1) + lowerBound;
+        pick3 = randGen.nextInt(upperBound - lowerBound + 1) + lowerBound;
+
+        System.out.println(pick1);
+        System.out.println(pick2);
+        System.out.println(pick3);
     }
 }
