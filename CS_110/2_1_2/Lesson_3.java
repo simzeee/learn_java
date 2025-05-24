@@ -47,7 +47,7 @@ public class Lesson_3 {
         System.out.println("Your heart has beat " + totalHeartbeats + " times.");
     }
 
-    public static void sound_Intensity(String[] args) {
+    public static void soundIntensity(String[] args) {
         Scanner scnr = new Scanner(System.in);
         double soundPower;
         double distanceTraveled;
@@ -61,7 +61,7 @@ public class Lesson_3 {
 
     }
 
-    public static void gravity_calculation(String[] args) {
+    public static void gravityCalculator(String[] args) {
         Scanner scnr = new Scanner(System.in);
         double G = 6.673e-11;
         double M = 5.98e24;
@@ -75,7 +75,7 @@ public class Lesson_3 {
         System.out.println(accelGravity);
     }
 
-    public static void math_methods(String[] args) {
+    public static void mathMethods(String[] args) {
         Scanner scnr = new Scanner(System.in);
         double p;
         double q;
@@ -89,7 +89,7 @@ public class Lesson_3 {
         System.out.printf("r = %.2f\n", r); // Outputs r with 2 decimal places
     }
 
-    public static void math_operators(String[] args) {
+    public static void mathOperators(String[] args) {
         Scanner scnr = new Scanner(System.in);
         int totalYears;
         int numMillennia;
@@ -107,7 +107,7 @@ public class Lesson_3 {
         System.out.println("Years: " + numYears);
     }
 
-    public static void average_family_size(String[] args) {
+    public static void averageFamilySize(String[] args) {
         Scanner scnr = new Scanner(System.in);
         int numChildrenA;
         int numChildrenB;
@@ -122,5 +122,35 @@ public class Lesson_3 {
 
         System.out.printf("%.2f\n", avgFamilies);
 
+    }
+
+    public static void wordGame(String[] args
+    ) {
+        Scanner scnr = new Scanner(System.in);
+        String wordRelative;
+        String wordFood;
+        String wordAdjective;
+        String wordTimePeriod;
+        // Get user's words
+        System.out.println("Provide input without spaces.");
+
+        System.out.println("Enter a kind of relative: ");
+        wordRelative = scnr.next();
+
+        System.out.println("Enter a kind of food: ");
+        wordFood = scnr.next();
+
+        System.out.println("Enter an adjective: ");
+        wordAdjective = scnr.next();
+
+        System.out.println("Enter a time period: ");
+        wordTimePeriod = scnr.next();
+
+        // Tell the story
+        System.out.println();
+        System.out.print("My " + wordRelative);
+        System.out.println(" says eating " + wordFood);
+        System.out.println("will make me more " + wordAdjective + ",");
+        System.out.println("so now I eat it every " + wordTimePeriod + ".");
     }
 }
