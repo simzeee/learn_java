@@ -183,4 +183,32 @@ public class Lesson_6 {
         }
         System.out.println("");
     }
+
+    public static void inputArrayComplicated(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int[] userValues = new int[9];   // Set of data specified by the user      
+        int userInput;
+        int itemCount = 0;
+
+        while (itemCount <= 10) {
+            userInput = scnr.nextInt();
+            if (userInput > 0) {
+                itemCount += 1;
+            } else {
+                break;
+            }
+            if (itemCount < 9) {
+                userValues[itemCount - 1] = userInput;
+            }
+        }
+
+        if (itemCount > 9) {
+            System.out.println("Too many numbers");
+        }
+
+        if (itemCount <= 9) {
+            System.out.println("Middle item: " + userValues[(itemCount / 2)]);
+        }
+
+    }
 }
