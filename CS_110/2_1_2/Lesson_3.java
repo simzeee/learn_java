@@ -179,4 +179,25 @@ public class Lesson_3 {
         System.out.println(pick2);
         System.out.println(pick3);
     }
+
+    public static void divideNumbersByInput(String[] args) {
+        int userNum;
+        int divNum;
+        String result = "";
+
+        Scanner scnr = new Scanner(System.in);
+
+        userNum = scnr.nextInt();
+        divNum = scnr.nextInt();
+
+        userNum /= divNum;
+        result += userNum + " ";
+        userNum /= divNum;
+        result += userNum + " ";
+        userNum /= divNum;
+        result += userNum;
+
+        System.out.println(result);
+
+    }
 }
