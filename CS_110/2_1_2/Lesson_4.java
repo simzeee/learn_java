@@ -120,6 +120,21 @@ public class Lesson_4 {
         } else {
             System.out.println("Records not available for this input");
         }
+    }
+
+    public static void rangeSkip(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int orderedForks;
+
+        orderedForks = scnr.nextInt();
+
+        if (((orderedForks < 60) && (orderedForks > 35))) {
+            System.out.println("Standard box");
+        } else if (((orderedForks < 120) && (orderedForks >= 90))) {
+            System.out.println("Full box");
+        } else {
+            System.out.println("Not efficient to ship");
+        }
 
     }
 
