@@ -91,22 +91,36 @@ public class Lesson_4 {
     }
 
     public static void checkTemp(String[] args) {
-      Scanner scnr = new Scanner(System.in);
-      int fahr;
+        Scanner scnr = new Scanner(System.in);
+        int fahr;
 
-      fahr = scnr.nextInt();
+        fahr = scnr.nextInt();
 
-      if(fahr <= 32){
-      System.out.println("New state: solid");
-         }
-      else if((fahr > 32) && (fahr <= 212)){
-         System.out.println("New state: liquid");
-      }
-      else{
-         System.out.println("New state: gas");
-      }
-      
+        if (fahr <= 32) {
+            System.out.println("New state: solid");
+        } else if ((fahr > 32) && (fahr <= 212)) {
+            System.out.println("New state: liquid");
+        } else {
+            System.out.println("New state: gas");
+        }
+    }
 
-   }
+    public static void checkYear(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int yearInput;
+
+        yearInput = scnr.nextInt();
+
+        if ((yearInput >= 1960) && (yearInput < 1970)) {
+            System.out.println("The 60s");
+        } else if ((yearInput >= 1970) && (yearInput < 1980)) {
+            System.out.println("The 70s");
+        } else if ((yearInput >= 1980) && (yearInput < 1990)) {
+            System.out.println("The 80s");
+        } else {
+            System.out.println("Records not available for this input");
+        }
+
+    }
 
 }
