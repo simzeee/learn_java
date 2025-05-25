@@ -90,4 +90,23 @@ public class Lesson_4 {
 
     }
 
+    public static void checkTemp(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int fahr;
+
+      fahr = scnr.nextInt();
+
+      if(fahr <= 32){
+      System.out.println("New state: solid");
+         }
+      else if((fahr > 32) && (fahr <= 212)){
+         System.out.println("New state: liquid");
+      }
+      else{
+         System.out.println("New state: gas");
+      }
+      
+
+   }
+
 }
