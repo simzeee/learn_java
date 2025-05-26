@@ -249,4 +249,23 @@ public class Lesson_4 {
         System.out.println(inputYear + (isLeapYear ? " - leap year" : " - not a leap year"));
 
     }
+
+    public static void firstMiddleLast(String[] args) {
+      String firstName;
+      String middleName;
+      String lastName;
+
+      Scanner scnr = new Scanner(System.in);
+      String names = scnr.nextLine();           
+      scnr.close();
+      String[] parts = names.split("\\s+");
+      int nameCount  = parts.length;
+      if(nameCount == 3){
+        System.out.println(parts[2] + ", " + parts[0].charAt(0) + "." + parts[1].charAt(0) + ".");
+      }
+      if(nameCount == 2){
+        System.out.println(parts[1] + ", " + parts[0].charAt(0) + ".");
+      }
+
+   }
 }
