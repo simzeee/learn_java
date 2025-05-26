@@ -230,4 +230,23 @@ public class Lesson_4 {
             System.out.println(pennies + (pennies == 1 ? " Penny" : " Pennies"));
         }
     }
+
+    public static void main(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int inputYear;
+        boolean isLeapYear;
+
+        isLeapYear = false;
+        inputYear = scnr.nextInt();
+
+        if ((inputYear % 4 == 0) && (inputYear % 100 != 0)) {
+            isLeapYear = true;
+        }
+        if ((inputYear % 100 == 0) && (inputYear % 400 == 0)) {
+            isLeapYear = true;
+        }
+
+        System.out.println(inputYear + (isLeapYear ? " - leap year" : " - not a leap year"));
+
+    }
 }
