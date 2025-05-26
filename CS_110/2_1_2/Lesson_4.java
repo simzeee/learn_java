@@ -231,7 +231,7 @@ public class Lesson_4 {
         }
     }
 
-    public static void main(String[] args) {
+    public static void checkLeapYear(String[] args) {
         Scanner scnr = new Scanner(System.in);
         int inputYear;
         boolean isLeapYear;
