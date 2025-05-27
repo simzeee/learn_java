@@ -251,21 +251,44 @@ public class Lesson_4 {
     }
 
     public static void firstMiddleLast(String[] args) {
-      String firstName;
-      String middleName;
-      String lastName;
+        String firstName;
+        String middleName;
+        String lastName;
 
-      Scanner scnr = new Scanner(System.in);
-      String names = scnr.nextLine();           
-      scnr.close();
-      String[] parts = names.split("\\s+");
-      int nameCount  = parts.length;
-      if(nameCount == 3){
-        System.out.println(parts[2] + ", " + parts[0].charAt(0) + "." + parts[1].charAt(0) + ".");
-      }
-      if(nameCount == 2){
-        System.out.println(parts[1] + ", " + parts[0].charAt(0) + ".");
-      }
+        Scanner scnr = new Scanner(System.in);
+        String names = scnr.nextLine();
+        scnr.close();
+        String[] parts = names.split("\\s+");
+        int nameCount = parts.length;
+        if (nameCount == 3) {
+            System.out.println(parts[2] + ", " + parts[0].charAt(0) + "." + parts[1].charAt(0) + ".");
+        }
+        if (nameCount == 2) {
+            System.out.println(parts[1] + ", " + parts[0].charAt(0) + ".");
+        }
 
-   }
+    }
+
+    public static void buildLoginName(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int spaceIndex;
+        String firstName;
+        String lastName;
+        String loginName;
+
+        String userInput = scnr.nextLine().trim();
+        scnr.close();
+        spaceIndex = userInput.indexOf(" ");
+        firstName = userInput.substring(0, spaceIndex);
+        // System.out.println(firstName);
+        loginName = firstName.length() < 6 ? firstName : firstName.substring(0, 6);
+        // System.out.println(loginName);        
+        lastName = userInput.substring(spaceIndex + 1, userInput.indexOf(" ", spaceIndex + 1));
+        // // System.out.println(lastName);
+        spaceIndex = userInput.indexOf(" ", spaceIndex + 1);
+        loginName = loginName + lastName.charAt(0) + "_" + userInput.charAt(userInput.length() - 1);
+        System.out.println("Your login name: " + loginName);
+        // System.out.println(spaceIndex);
+
+    }
 }
