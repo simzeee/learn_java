@@ -138,4 +138,18 @@ public class Lesson_4 {
 
     }
 
+    public static void annoying(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        String inString;
+
+        inString = scnr.nextLine();
+
+        if (Character.isLetter(inString.charAt(0)) && Character.isLetter(inString.charAt(1)) && Character.isLetter(inString.charAt(2))) {
+            System.out.println("Valid string");
+        } else {
+            System.out.println("Invalid string");
+        }
+
+    }
+
 }
