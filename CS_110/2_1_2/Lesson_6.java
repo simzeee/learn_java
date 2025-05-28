@@ -126,4 +126,41 @@ public class Lesson_6 {
         System.out.println();
 
     }
+
+    public static void arrayModification(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        double[] scoresList;
+        double[] updatedList;
+        int numElements;
+        int i;
+
+        numElements = scnr.nextInt();
+
+        scoresList = new double[numElements];
+        updatedList = new double[numElements];
+
+        for (i = 0; i < scoresList.length; ++i) {
+            scoresList[i] = scnr.nextDouble();
+        }
+
+        for (i = 0; i < updatedList.length; ++i) {
+            if (i == 0) {
+                updatedList[0] = scoresList[scoresList.length - 1];
+            } else {
+                updatedList[i] = scoresList[i - 1];
+            }
+        }
+
+        System.out.print("Original scores: ");
+        for (i = 0; i < scoresList.length; ++i) {
+            System.out.printf("%.1f ", scoresList[i]);
+        }
+        System.out.println();
+
+        System.out.print("Updated scores: ");
+        for (i = 0; i < updatedList.length; ++i) {
+            System.out.print(updatedList[i] + " ");
+        }
+        System.out.println();
+    }
 }
