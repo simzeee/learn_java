@@ -1,10 +1,13 @@
-public class Salary {                         
-   public static void main (String [] args) { 
-      int wage;                          
+import java.util.Scanner;
 
-      wage = 35;
+public class Salary {
+   public static void main(String[] args) {
+      int wage;
 
-      System.out.print("Salary is ");         
-      System.out.println(wage * 40 * 52);     
-   } 
-} 
+      Scanner scnr = new Scanner(System.in);
+      wage = scnr.nextInt();
+
+      System.out.print("Salary is ");
+      System.out.println(wage * 40 * 52);
+   }
+}
