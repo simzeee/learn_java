@@ -1,4 +1,4 @@
-package educative_java_from_scratch;
+// package educative_java_from_scratch;
 
 public class HelloWorld {
 
