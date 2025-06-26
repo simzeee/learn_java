@@ -58,4 +58,18 @@ public class Lesson_3 {
     System.out.printf("Sound wave intensity is %.3f\n", soundIntensity);
 
   }
+
+  public static void gravity_calculation(String[] args) {
+    Scanner scnr = new Scanner(System.in);
+    double G = 6.673e-11;
+    double M = 5.98e24;
+    double accelGravity;
+    double distCenter;
+
+    distCenter = scnr.nextDouble();
+
+    accelGravity = (G * M) / (distCenter * distCenter);
+
+    System.out.println(accelGravity);
+  }
 }
