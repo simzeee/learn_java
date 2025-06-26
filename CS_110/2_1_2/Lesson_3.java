@@ -73,17 +73,35 @@ public class Lesson_3 {
     System.out.println(accelGravity);
   }
 
-  public static void math_methods (String[] args) {
-      Scanner scnr = new Scanner(System.in);
-      double p;
-      double q;
-      double r;
+  public static void math_methods(String[] args) {
+    Scanner scnr = new Scanner(System.in);
+    double p;
+    double q;
+    double r;
 
-      p = scnr.nextDouble();
-      q = scnr.nextDouble();
+    p = scnr.nextDouble();
+    q = scnr.nextDouble();
 
-      r = Math.sqrt(Math.abs(p) + Math.abs(q));
+    r = Math.sqrt(Math.abs(p) + Math.abs(q));
 
-      System.out.printf("r = %.2f\n", r); // Outputs r with 2 decimal places
-   }
+    System.out.printf("r = %.2f\n", r); // Outputs r with 2 decimal places
+  }
+
+  public static void math_operators(String[] args) {
+    Scanner scnr = new Scanner(System.in);
+    int totalYears;
+    int numMillennia;
+    int numCenturies;
+    int numYears;
+
+    totalYears = scnr.nextInt();
+
+    numMillennia = totalYears / 1000;
+    numCenturies = (totalYears / 100) % 10;
+    numYears = totalYears % 100;
+
+    System.out.println("Millennia: " + numMillennia);
+    System.out.println("Centuries: " + numCenturies);
+    System.out.println("Years: " + numYears);
+  }
 }
