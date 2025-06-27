@@ -198,6 +198,24 @@ public class Lesson_3 {
         result += userNum;
 
         System.out.println(result);
+    }
+
+    public static void caclculateCalories (String[] args) {
+        Scanner scnr = new Scanner(System.in);
+
+        int age;
+        double weight;
+        double heartRate;
+        double time;
+        double calories;
+
+        age = scnr.nextInt();
+        weight = scnr.nextInt();
+        heartRate = scnr.nextInt();
+        time = scnr.nextInt();
+
+        calories = (((age * 0.2757) + (weight * 0.03295) + (heartRate * 1.0781) - 75.4991) * time) / 8.368;
+        System.out.printf("Calories: %.2f calories\n", calories);
 
     }
 }
