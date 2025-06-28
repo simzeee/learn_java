@@ -32,6 +32,23 @@ public class Lesson_4 {
         } else {
             System.out.println("Other goal count");
         }
+    }
+
+    public static void main(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int numberOfSides;
+
+        numberOfSides = scnr.nextInt();
+
+        if (numberOfSides == 3) {
+            System.out.println("Triangle");
+        } else if (numberOfSides == 5) {
+            System.out.println("Pentagon");
+        } else if (numberOfSides == 6) {
+            System.out.println("Hexagon");
+        } else {
+            System.out.println("Unexpected polygon");
+        }
 
     }
 }
