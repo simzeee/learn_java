@@ -34,7 +34,7 @@ public class Lesson_4 {
         }
     }
 
-    public static void main(String[] args) {
+    public static void checkSides(String[] args) {
         Scanner scnr = new Scanner(System.in);
         int numberOfSides;
 
