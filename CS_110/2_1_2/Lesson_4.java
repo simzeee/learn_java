@@ -51,4 +51,43 @@ public class Lesson_4 {
         }
 
     }
+
+    public static void checkGroups(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int taskCount;
+        int acceptedGroups;
+        int invalidGroups;
+
+        taskCount = scnr.nextInt();
+        acceptedGroups = scnr.nextInt();
+        invalidGroups = scnr.nextInt();
+
+        if (taskCount <= 15) {
+            acceptedGroups += 5;
+        } else {
+            invalidGroups += 6;
+        }
+
+        System.out.println(acceptedGroups);
+        System.out.println(invalidGroups);
+    }
+
+    public static void checkInput(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int numFolders;
+
+        numFolders = scnr.nextInt();
+
+        if (numFolders >= 134) {
+            System.out.println("Too many files");
+        } else if (numFolders >= 38) {
+            System.out.println("Large file cabinet");
+        } else if (numFolders > 0) {
+            System.out.println("Mid-sized file cabinet");
+        } else {
+            System.out.println("Bad input");
+        }
+
+    }
+
 }
