@@ -187,4 +187,47 @@ public class Lesson_4 {
         }
 
     }
+
+    public static void countChange(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int totalPennies = scnr.nextInt();
+
+        if (totalPennies < 1) {
+            System.out.println("No change");
+        }
+
+        // compute each coin count by successive div/mod
+        int dollars = totalPennies / 100;
+        int rem = totalPennies % 100;
+
+        int quarters = rem / 25;
+        rem = rem % 25;
+
+        int dimes = rem / 10;
+        rem = rem % 10;
+
+        int nickels = rem / 5;
+        rem = rem % 5;
+
+        int pennies = rem;
+        // print with correct singular/plural
+        if (dollars > 0) {
+            System.out.println(
+                    dollars
+                    + (dollars == 1 ? " Dollar" : " Dollars")
+            );
+        }
+        if (quarters > 0) {
+            System.out.println(quarters + (quarters == 1 ? " Quarter" : " Quarters"));
+        }
+        if (dimes > 0) {
+            System.out.println(dimes + (dimes == 1 ? " Dime" : " Dimes"));
+        }
+        if (nickels > 0) {
+            System.out.println(nickels + (nickels == 1 ? " Nickel" : " Nickels"));
+        }
+        if (pennies > 0) {
+            System.out.println(pennies + (pennies == 1 ? " Penny" : " Pennies"));
+        }
+    }
 }
