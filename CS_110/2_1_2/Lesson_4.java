@@ -152,4 +152,39 @@ public class Lesson_4 {
 
     }
 
+    public static void highwayCheck(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int highwayNumber;
+        int primaryNumber;
+        int servingNumber;
+        boolean isNotValid;
+
+        highwayNumber = scnr.nextInt();
+        servingNumber = highwayNumber % 100;
+        isNotValid = highwayNumber % 100 == 0;
+
+        if ((highwayNumber < 1) || (highwayNumber > 999) || (isNotValid)) {
+            System.out.println(highwayNumber + " is not a valid interstate highway number.");
+            return;
+        }
+
+        // indicate whether primary or auxillary
+        if ((highwayNumber < 100)) {
+            // if primary highway runs north/south or east/west
+            if ((highwayNumber % 2) == 0) {
+                System.out.println("I-" + highwayNumber + " is primary, going east/west.");
+            } else {
+                System.out.println("I-" + highwayNumber + " is primary, going north/south.");
+            }
+        } // if auxillary indicate what primary highway it serves
+        else {
+            if ((servingNumber % 2) == 0) {
+                System.out.println("I-" + highwayNumber + " is auxiliary, serving I-" + servingNumber + ", going east/west.");
+            } else {
+                System.out.println("I-" + highwayNumber + " is auxiliary, serving I-" + servingNumber + ", going north/south.");
+            }
+
+        }
+
+    }
 }
