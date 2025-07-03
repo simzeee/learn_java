@@ -291,4 +291,35 @@ public class Lesson_4 {
         // System.out.println(spaceIndex);
 
     }
+
+    public static void abbreviations(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+
+        String bff = "BFF";
+        String idk = "IDK";
+        String jk = "JK";
+        String tmi = "TMI";
+        String ttyl = "TTYL";
+
+        System.out.println("Enter text:");
+        String userInput = scnr.nextLine();
+        System.out.println("You entered: " + userInput);
+
+        if (userInput.indexOf(bff) != -1) {
+            System.out.println("BFF: best friend forever");
+        }
+        if (userInput.indexOf(idk) != -1) {
+            System.out.println("IDK: I don't know");
+        }
+        if (userInput.indexOf(jk) != -1) {
+            System.out.println("JK: just kidding");
+        }
+        if (userInput.indexOf(tmi) != -1) {
+            System.out.println("TMI: too much information");
+        }
+        if (userInput.indexOf(ttyl) != -1) {
+            System.out.println("TTYL: talk to you later");
+        }
+
+    }
 }
