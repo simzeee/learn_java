@@ -49,4 +49,25 @@ public class Lesson_6 {
         }
         System.out.println();
     }
+
+    public static void assignArrayValues(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      final int NUM_VALS = 5;
+		int[] totalNumbersList = new int[NUM_VALS];
+		int i;
+
+		for (i = 0; i < totalNumbersList.length; ++i) {
+			totalNumbersList[i] = scnr.nextInt();
+		}
+
+      int[] fourthNumbersList = new int[NUM_VALS];
+      for(i = 0; i < fourthNumbersList.length; ++i){
+         fourthNumbersList[i] = totalNumbersList[i]/4;
+      }
+
+      for (i = 0; i < fourthNumbersList.length; ++i) {
+			System.out.print(fourthNumbersList[i] + " ");
+		}
+		System.out.println();
+   }
 }
