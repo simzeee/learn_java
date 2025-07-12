@@ -211,4 +211,29 @@ public class Lesson_6 {
         }
 
     }
+    public static void normalizeInput(String[] args) {
+    Scanner scnr = new Scanner(System.in);    
+    int totalNumFloats = scnr.nextInt();
+    double[] values = new double[totalNumFloats];
+    double inputValue;
+    double largestValue = Double.NEGATIVE_INFINITY;
+
+    for(int i = 0; i < values.length; ++i){        
+        inputValue = scnr.nextDouble();
+        if(i == 0){
+            largestValue = inputValue;
+        }
+        else if(inputValue > largestValue){
+            largestValue = inputValue;
+        }
+        values[i] = inputValue;
+    }
+
+    for(int i = 0; i < values.length; ++i){
+        System.out.printf("%.2f ", values[i]/largestValue);
+    }    
+    
+   System.out.println();
+
+   }
 }
