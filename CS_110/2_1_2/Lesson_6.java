@@ -101,7 +101,7 @@ public class Lesson_6 {
         System.out.println();
     }
 
-    public static void main(String[] args) {
+    public static void outputEvenItems(String[] args) {
         Scanner scnr = new Scanner(System.in);
         final int NUM_VALS = 5;
         int[] groceryItemPrices = new int[NUM_VALS];
