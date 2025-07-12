@@ -264,4 +264,29 @@ public class Lesson_6 {
 
         scnr.close();
     }
+
+    public static void wordContainsChar(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int numWords = scnr.nextInt();
+        char charCheck;
+        String inputWord;
+
+        String[] inputWords = new String[numWords];
+
+        for (int i = 0; i < inputWords.length; ++i) {
+            inputWord = scnr.next();
+            inputWords[i] = inputWord;
+        }
+
+        charCheck = scnr.next().charAt(0);
+
+        for (int i = 0; i < inputWords.length; ++i) {
+            if (inputWords[i].contains(String.valueOf(charCheck))) {
+                System.out.print(inputWords[i] + ",");
+            }
+        }
+
+        System.out.println();
+
+    }
 }
