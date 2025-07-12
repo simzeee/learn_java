@@ -211,29 +211,57 @@ public class Lesson_6 {
         }
 
     }
-    public static void normalizeInput(String[] args) {
-    Scanner scnr = new Scanner(System.in);    
-    int totalNumFloats = scnr.nextInt();
-    double[] values = new double[totalNumFloats];
-    double inputValue;
-    double largestValue = Double.NEGATIVE_INFINITY;
 
-    for(int i = 0; i < values.length; ++i){        
-        inputValue = scnr.nextDouble();
-        if(i == 0){
-            largestValue = inputValue;
+    public static void normalizeInput(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int totalNumFloats = scnr.nextInt();
+        double[] values = new double[totalNumFloats];
+        double inputValue;
+        double largestValue = Double.NEGATIVE_INFINITY;
+
+        for (int i = 0; i < values.length; ++i) {
+            inputValue = scnr.nextDouble();
+            if (i == 0) {
+                largestValue = inputValue;
+            } else if (inputValue > largestValue) {
+                largestValue = inputValue;
+            }
+            values[i] = inputValue;
         }
-        else if(inputValue > largestValue){
-            largestValue = inputValue;
+
+        for (int i = 0; i < values.length; ++i) {
+            System.out.printf("%.2f ", values[i] / largestValue);
         }
-        values[i] = inputValue;
+
+        System.out.println();
+
     }
 
-    for(int i = 0; i < values.length; ++i){
-        System.out.printf("%.2f ", values[i]/largestValue);
-    }    
-    
-   System.out.println();
+    public static void countFrequency(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int totalNumWords = scnr.nextInt();
 
-   }
+        String[] words = new String[totalNumWords];
+        for (int i = 0; i < totalNumWords; i++) {
+            words[i] = scnr.next();
+        }
+
+        // 2) count into freqs[]
+        int[] freqs = new int[totalNumWords];
+        for (int i = 0; i < totalNumWords; i++) {
+            freqs[i] = 0;                        // start at zero
+            for (int j = 0; j < totalNumWords; j++) {
+                if (words[i].equals(words[j])) {
+                    freqs[i]++;
+                }
+            }
+        }
+
+        // 3) print each word with its frequency
+        for (int i = 0; i < totalNumWords; i++) {
+            System.out.println(words[i] + " - " + freqs[i]);
+        }
+
+        scnr.close();
+    }
 }
