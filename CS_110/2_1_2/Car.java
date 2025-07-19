@@ -1,5 +1,3 @@
-package projects;
-
 public class Car {
 
     private int modelYear;
