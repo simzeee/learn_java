@@ -1,9 +1,9 @@
-package CS_205;
+package cs205.lesson_4_4;
 import java.util.Scanner;
 import java.util.ArrayList;
 // import java.util.Collections;
 
-public class Lesson_4 {
+public class SortTypes {
   
    // Input 5 Integers and return the Integers in an ArrayList
    public static ArrayList<Integer> inputIntegers(Scanner scnr) {
