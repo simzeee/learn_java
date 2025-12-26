@@ -69,23 +69,12 @@ public class Library {
        
       // Insert into linked list
       currNode = new BookNode(bookTitle, bookAuthor, bookISBN);
-      // TODO: Call LL_Library's insertSorted() method to insert currNode and return
       System.out.println("Number of linked list operations: " + linkedListLibrary.insertSorted(currNode, 0));
-      
-      //       the number of operations performed
-      
+
       linkedListLibrary.lastNode = currNode;
       
       // Insert into ArrayList
       tempBook = new Book(bookTitle, bookAuthor, bookISBN);
-      // TODO: Call AL_Library's insertSorted() method to insert tempBook and return
-      //       the number of operations performed
       System.out.println("Number of ArrayList operations: " + arrayListLibrary.insertSorted(tempBook, 0));
-      
-      
-      // TODO: Print number of operations for linked list
-      
-      // TODO: Print number of operations for ArrayList
-      
    }
 }

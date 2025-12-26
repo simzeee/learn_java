@@ -32,7 +32,6 @@ public class PrintStatistics {
         System.out.println("Maximum: " + max);
 
         // Step 2: Calculate and output mean
-        /* Type your code here */
         double mean = 0;
         for (int num : nums) {
             mean = mean + num;
@@ -45,8 +44,6 @@ public class PrintStatistics {
         boolean isPal = false;
         for (int i = 0; i < nums.length; ++i) {
             if (nums[i] == nums[j]) {
-                // System.out.print(j);
-                // System.out.print(nums[j]);
                 j = j - 1;
                 isPal = true;
                 if (i == j) {
@@ -80,7 +77,6 @@ public class PrintStatistics {
         System.out.printf("Median: %.1f\n", median);
 
         // Step 5: Find and output mode
-        /* Type your code here */
         int modeCount = 0;
         int countCompare = 0;
         int mode = nums[0];

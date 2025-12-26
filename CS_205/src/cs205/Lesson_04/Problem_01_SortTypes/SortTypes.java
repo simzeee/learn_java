@@ -1,7 +1,6 @@
 package cs205.Lesson_04.Problem_01_SortTypes;
 import java.util.Scanner;
 import java.util.ArrayList;
-// import java.util.Collections;
 
 public class SortTypes {
   
@@ -53,9 +52,6 @@ public class SortTypes {
       result.add(copy.get(0));
       result.add(copy.get(copy.size()/2));
       result.add(copy.get(copy.size()-1));
-      // if(copy.size() % 2 == 0){
-
-      // }
       return result;
 
    }
