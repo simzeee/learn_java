@@ -1,4 +1,4 @@
-package cs205.9_new_lesson;
+package cs205.Lesson_09.Problem_01_MileageTracker;
 
 public class MileageTrackerNode {
    private double miles;         // Node data                                                         

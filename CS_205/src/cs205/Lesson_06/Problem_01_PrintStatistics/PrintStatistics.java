@@ -1,4 +1,4 @@
-package cs205.lesson_6_9;
+package cs205.Lesson_06.Problem_01_PrintStatistics;
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-// package cs205.lesson_4_5;
+package cs205.Lesson_04.Problem_02_StudentCourse;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;

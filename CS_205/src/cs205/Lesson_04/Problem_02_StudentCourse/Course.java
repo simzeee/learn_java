@@ -1,3 +1,5 @@
+package cs205.Lesson_04.Problem_02_StudentCourse;
+
 public class Course implements Comparable<Course> {
    private String department;
    private Integer number;

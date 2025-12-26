@@ -1,4 +1,4 @@
-package cs205.new_lesson_8;
+package cs205.Lesson_08.Problem_02_TicketingService;
 import java.util.Scanner;
 import java.util.LinkedList;
 import java.util.Queue;

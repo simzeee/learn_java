@@ -1,4 +1,4 @@
-package cs205.lesson_6_11_b;
+package cs205.Lesson_06.Problem_02_SmallCities;
 
 import java.util.Scanner;
 

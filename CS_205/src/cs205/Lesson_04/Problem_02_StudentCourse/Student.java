@@ -1,3 +1,5 @@
+package cs205.Lesson_04.Problem_02_StudentCourse;
+
 public class Student implements Comparable<Student> {
    String firstName;
    String lastName;

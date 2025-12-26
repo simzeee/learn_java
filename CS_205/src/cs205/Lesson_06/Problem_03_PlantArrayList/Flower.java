@@ -1,4 +1,4 @@
-package cs205.new_lesson_6_15;
+package cs205.Lesson_06.Problem_03_PlantArrayList;
 
 public class Flower extends Plant {
 

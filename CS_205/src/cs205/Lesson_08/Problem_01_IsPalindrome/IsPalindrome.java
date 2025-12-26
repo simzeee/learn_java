@@ -1,4 +1,4 @@
-package cs205.new_lesson_8;
+package cs205.Lesson_08.Problem_01_IsPalindrome;
 
 import java.util.Deque;
 import java.util.LinkedList;
