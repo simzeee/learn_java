@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CS_110/CS_110.iml" filepath="$PROJECT_DIR$/CS_110/CS_110.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS_205/CS_205.iml" filepath="$PROJECT_DIR$/CS_205/CS_205.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS_205/src/CS_206.iml" filepath="$PROJECT_DIR$/CS_205/src/CS_206.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn_java.iml" filepath="$PROJECT_DIR$/learn_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/learn_java2.iml" filepath="$PROJECT_DIR$/java/learn_java2.iml" />
+    </modules>
+  </component>
+</project>
